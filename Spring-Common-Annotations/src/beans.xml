@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+   
+   <!-- agr hum chahty hen k hmain <bean> na bnae ye kaam hum java side se kren humenye 
+   	<context:component-scan base-package="com.college" /> use krna pry ga is k baad hmen <bean>
+   	tag bnany ki zaroorat nhn hy kun k ye hi kaam hm Java ki side se kr rahy hoty hen @Component
+   	annotation k through.Ye yaad rkhna zaroori hy k agr hm @Component use kr rahy hen hmen xml file
+   	file main <context:component-scan base-package="com.college" />  likhna zaroori hy -->
+   	
+   
+   	
+  <!--  <context:component-scan base-package="com.college" /> -->
+   
+   
+   
+   <!-- Ab is <bean> tag ki zaroorat nhn hy bus smjhne k liye rakh diya hy --> 
+   <!-- <bean id="collegeBean" class="com.college.College"></bean> -->
+   
+</beans>
