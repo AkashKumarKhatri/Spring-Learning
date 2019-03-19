@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+     
+     <bean id="mathCheatObject" class="com.di.MathCheat" /> <!-- This is Best Approach then everytime create object inside beantag -->
+     
+     <bean id="stu" class="com.di.Student">
+     	<property name="id" value="1001" />
+     	
+     	<!-- This approach is not recommended -->
+     	<!-- <property name="mathCheat">
+     		<bean class="com.di.MathCheat"></bean>
+     	</property>  -->
+     	
+     	
+     	<property name="mathCheat" ref="mathCheatObject" />
+     	
+     </bean>
+     
+     <bean id="anotherStudent" class="com.di.AnotherStudent">
+     	
+     	<!-- This approach is not recommended -->
+     	<!-- <property name="cheat"/>
+     		<bean class="com.di.MathCheat"></bean> 
+     	</property> -->
+     	
+     	<property name="cheat" ref="mathCheatObject" />
+     	
+     </bean>
+
+</beans>
