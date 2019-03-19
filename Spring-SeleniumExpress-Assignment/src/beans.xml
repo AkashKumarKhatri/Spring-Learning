@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+     
+    <bean id="dataServiceObject" class="com.di.DataService" />
+    <bean id="missedCallAlertServiceObject" class="com.di.MissedCallAlertService" />
+    <bean id="helloTuneServiceObject" class="com.di.HelloTuneService"/>
+    
+    <bean id="ufone" class="com.di.UfonePK">
+    	<property name="service" ref="missedCallAlertServiceObject" />
+    </bean>
+    
+
+</beans>
