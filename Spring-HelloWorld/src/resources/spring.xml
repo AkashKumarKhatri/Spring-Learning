@@ -1,0 +1,11 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+
+	<!-- By default bean scope is singleton in spring -->
+	<bean id="t" class="beans.Test"></bean>
+	
+	<!-- If we want to not use default singleton scope then we should go for this  -->
+	<!-- <bean id="t" class="beans.Test" scope="prototype"></bean> -->
+
+</beans>
